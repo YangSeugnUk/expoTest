@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {View, Text, Button} from "react-native";
 
 const App = () => {
@@ -32,6 +32,11 @@ const App = () => {
     const clearData = () => {
         setDatas([]);
     }
+
+    // 1순위로 무조건 실행되는 함수.
+    useEffect(() => {
+        getData();
+    }, [])
 
     return (
         <View style={{flex:1, justifyContent:"center", alignItems:"center"}}>
