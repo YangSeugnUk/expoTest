@@ -1,41 +1,29 @@
 import React from 'react';
-import {View, Text, Image, Button, TextInput, StyleSheet} from 'react-native';
+import {View, Text} from "react-native";
 
+// 함수
 const App = () => {
+
+    // 함수, 상수, 변수, 상태
+
+    // 실질적으로 화면에 보여주는 부분
     return (
         <View>
-          <Text>
-            hi
-          </Text>
-          <Image
-            source={{
-              uri: "https://thumb.mt.co.kr/06/2020/07/2020070608543287598_1.jpg/dims/optimize/"
-            }}
-            style={{ width:200, height:200}}
-          />
-          <Button
-            title="Press me"
-            onPress={() => alert("hi")}
-          />
-          <TextInput
-              style={styles.input}
+            <Text>
+                Hi~
+            </Text>
 
-            placeholder="hi"
-            keyboardType="text"
-          />
-          
         </View>
     );
 };
 
-
 export default App;
 
-const styles = StyleSheet.create({
-  input:{
-    height:40,
-    margin:12,
-    borderWidth:1,
-    padding:10,
-  }
-})
+//  styleSheet 선언
+
+// 코딩기본법칙
+// 1. 위에서 아래 순서로 빌드를 한다.
+// 2. = 을 기준으로 오른쪽에서 왼쪽으로 치환한다.
+// 3. . 하위메소드 호출
+// 4. {} 직접호출
+// 5. () 함수들의 모음
