@@ -1,10 +1,9 @@
 import React from 'react';
-import Movie from "./screens/Movie";
-import User from "./screens/User";
+import MovieDetail from "./screens/MovieDetail";
 
 const App = () => {
     return (
-        <User/>
+        <MovieDetail/>
     );
 };
 
