@@ -5,13 +5,45 @@ import {View, Text} from "react-native";
 const App = () => {
 
     // 함수, 상수, 변수, 상태
+    // const yangseunguk = {
+    //     name : "seunguk",
+    //     age :  35,
+    //     gender : "male",
+    //     address : "hh",
+    //
+    // }
+    const datas = [
+        {
+            name : "seunguk",
+            age :  35,
+            gender : "male",
+            address : "hh",
+        },
+        {
+            name : "seunguk",
+            age :  35,
+            gender : "male",
+            address : "hh",
+        },
+        {
+            name : "seunguk",
+            age :  35,
+            gender : "male",
+            address : "hh",
+        },
+
+
+    ]
+
 
     // 실질적으로 화면에 보여주는 부분
     return (
-        <View>
-            <Text>
-                Hi~
-            </Text>
+        <View style={{flex:1, alignItems:"center", justifyContent:"center"}}>
+            {datas.map(data => (
+                <Text>
+                    {data.name}
+                </Text>
+            ))}
 
         </View>
     );
